@@ -13,35 +13,35 @@
 
 <script>
 
-const christmasBtn = document.querySelector("#button1");
-const halloweenBtn = document.querySelector("#button2");
-const easterBtn = document.querySelector("#button3");
+const cbutton = document.querySelector("#button1");
+const hbutton = document.querySelector("#button2");
+const ebutton = document.querySelector("#button3");
 
-const christmasImg = document.querySelector("img:nth-of-type(1)");
-const halloweenImg = document.querySelector("img:nth-of-type(2)");
-const easterImg = document.querySelector("img:nth-of-type(3)");
+const cImage = document.querySelector("img:nth-of-type(1)");
+const hImage = document.querySelector("img:nth-of-type(2)");
+const eImage = document.querySelector("img:nth-of-type(3)");
 
-christmasBtn.addEventListener("click", () => {
-if (christmasImg.style.display !== "block") {
-  christmasImg.style.display = "block";
-  halloweenImg.style.display = "none";
-  easterImg.style.display = "none";
+cbutton.addEventListener("click", () => {
+if (cImage.style.display !== "block") {
+  cImage.style.display = "block";
+  hImage.style.display = "none";
+  eImage.style.display = "none";
 }
 });
 
-halloweenBtn.addEventListener("click", () => {
-if (halloweenImg.style.display !== "block") {
-  christmasImg.style.display = "none";
-  halloweenImg.style.display = "block";
-  easterImg.style.display = "none";
+hbutton.addEventListener("click", () => {
+if (hImage.style.display !== "block") {
+  cImage.style.display = "none";
+  hImage.style.display = "block";
+  eImage.style.display = "none";
 }
 });
 
-easterBtn.addEventListener("click", () => {
-if (easterImg.style.display !== "block") {
-  christmasImg.style.display = "none";
-  halloweenImg.style.display = "none";
-  easterImg.style.display = "block";
+ebutton.addEventListener("click", () => {
+if (eImage.style.display !== "block") {
+  cImage.style.display = "none";
+  hImage.style.display = "none";
+  eImage.style.display = "block";
 }
 });
 
