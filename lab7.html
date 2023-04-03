@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="button1">Christmas</button>
+    <button id="button2">Halloween</button>
+    <button id="button3">Easter</button>
+
+  <img src="download (4).jpg" alt="button1" style="display:none"/>
+  <img src="OIP (4).jpg" alt="button2" style="display:none"/>
+  <img src="OIF.jpg" alt="button3" style="display:none"/>
+  
+</body>
+
+<script>
+
+const christmasBtn = document.querySelector("#button1");
+const halloweenBtn = document.querySelector("#button2");
+const easterBtn = document.querySelector("#button3");
+
+const christmasImg = document.querySelector("img:nth-of-type(1)");
+const halloweenImg = document.querySelector("img:nth-of-type(2)");
+const easterImg = document.querySelector("img:nth-of-type(3)");
+
+christmasBtn.addEventListener("click", () => {
+if (christmasImg.style.display !== "block") {
+  christmasImg.style.display = "block";
+  halloweenImg.style.display = "none";
+  easterImg.style.display = "none";
+}
+});
+
+halloweenBtn.addEventListener("click", () => {
+if (halloweenImg.style.display !== "block") {
+  christmasImg.style.display = "none";
+  halloweenImg.style.display = "block";
+  easterImg.style.display = "none";
+}
+});
+
+easterBtn.addEventListener("click", () => {
+if (easterImg.style.display !== "block") {
+  christmasImg.style.display = "none";
+  halloweenImg.style.display = "none";
+  easterImg.style.display = "block";
+}
+});
+
+</script>
+</html>
